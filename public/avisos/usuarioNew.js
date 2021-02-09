@@ -1,5 +1,6 @@
 var datosFormulario; //lo que se va a enviar
 var user,name,last,pass,pass2;
+
 $(function(){
 
 	$("input:submit").click(function() {
@@ -20,7 +21,6 @@ $(function(){
 		obtenerMensaje();
 		return false;
 	});
-
 });
 function mostrarAviso(error){
 	switch(error) {

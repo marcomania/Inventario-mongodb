@@ -5,5 +5,5 @@
 
 module.exports = {
     //MONGODB_URL : process.env.MONGODB_URI
-    MONGODB_URL : "mongodb://localhost/gelishtime"
+    MONGODB_URL : "mongodb+srv://admin:musemania2@fisibd3.9pbab.mongodb.net/almacen?retryWrites=true&w=majority"
 }
