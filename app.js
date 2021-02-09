@@ -25,9 +25,11 @@ const express = require("express"),
       mongo = require('./models/connection'), // inicia la coneccion con mongodb
       app = express()
 
+
+const PORT = process.env.PORT || 3000;
 // configuraciones de express
 app
-    .set( 'port', config.PORT || 3000 )
+    .set( 'port', PORT )
     .use( "/public", express.static("public") )
     .use( bodyParser.json() )
     .use( bodyParser.urlencoded({extended:true}))
